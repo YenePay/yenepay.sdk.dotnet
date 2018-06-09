@@ -1,0 +1,10 @@
+SampleShopApplication/.vs
+SampleShopApplication/packages/
+SampleShopApplication/SampleShopApplication/bin/
+SampleShopApplication/SampleShopApplication/obj/
+
+YenePaySDK/.vs
+YenePaySDK/packages/
+YenePaySDK/*.nupkg
+YenePaySDK/YenePaySDK/YenePaySDK.nuspec
+YenePaySDK/YenePaySDK/*/*/YenePaySDK.*

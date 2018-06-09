@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="form-group" style="padding: 50px 10px;">
+
+    <div class="body-content">
+        <div class="row">
+            <form method="post" action="Home/CheckoutExpress">
+                <div class="col-xs-4">
+                    <img src="~/Content/Images/images (1).jpg" class="col-xs-6" />
+                    <div class="col-xs-6 text-left">
+                        <input type="hidden" name="ItemName" value="Sample Item 1" />
+                        <input type="hidden" name="UnitPrice" value="350">
+                        <input type="hidden" name="DeliveryFee" value="50" />
+                        <input type="hidden" name="Discount" value="10" />
+                        <input type="hidden" name="Tax1" value="7.50" />
+                        <input type="hidden" name="Tax2" value="0" />
+                        <input type="hidden" name="HandlingFee" value="0">
+                        <b style="font-size: 1.2em;" class="text-primary">Sample Item 1</b><br />
+                        <span>Qty: <input type="text" value="1" name="Quantity" /></span><br />
+                        <span>ETB 350.00</span>
+                        <br /><br />
+                        <button type="submit" value="submit" class="btn btn-success" style="font-size: 0.9em;">Pay with YenePay</button>
+                    </div>
+                </div>
+            </form>
+            <form method="post" action="Home/CheckoutExpress">
+                <div class="col-xs-4">
+                    <img src="~/Content/Images/images (2).jpg" class="col-xs-6" />
+                    <div class="col-xs-6 text-left">
+                        <input type="hidden" name="ItemName" value="Sample Item 2" />
+                        <input type="hidden" name="UnitPrice" value="1050">
+                        <input type="hidden" name="DeliveryFee" value="50" />
+                        <input type="hidden" name="Discount" value="10" />
+                        <input type="hidden" name="Tax1" value="7.50" />
+                        <input type="hidden" name="Tax2" value="0" />
+                        <input type="hidden" name="HandlingFee" value="0">
+                        <b style="font-size: 1.2em;" class="text-primary">Sample Item 2</b><br />
+                        <span>Qty: <input type="text" value="1" name="Quantity" /></span><br />
+                        <span>ETB 1050.00</span>
+                        <br /><br />
+                        <button type="submit" value="submit" class="btn btn-success" style="font-size: 0.9em;">Pay with YenePay</button>
+                    </div>
+                </div>
+            </form>
+            <form method="post" action="Home/CheckoutExpress">
+                <div class="col-xs-4">
+                    <img src="~/Content/Images/images (3).jpg" class="col-xs-6" />
+                    <div class="col-xs-6 text-left">
+                        <input type="hidden" name="ItemName" value="Sample Item 3" />
+                        <input type="hidden" name="UnitPrice" value="3000">
+                        <input type="hidden" name="DeliveryFee" value="50" />
+                        <input type="hidden" name="Discount" value="10" />
+                        <input type="hidden" name="Tax1" value="7.50" />
+                        <input type="hidden" name="Tax2" value="0" />
+                        <input type="hidden" name="HandlingFee" value="0">
+                        <b style="font-size: 1.2em;" class="text-primary">Sample Item 3</b><br />
+                        <span>Qty: <input type="text" value="1" name="Quantity" /></span><br />
+                        <span>ETB 3000.00</span>
+                        <br /><br />
+                        <button type="submit" value="submit" class="btn btn-success" style="font-size: 0.9em;">Pay with YenePay</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
