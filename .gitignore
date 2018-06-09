@@ -7,4 +7,6 @@ YenePaySDK/.vs
 YenePaySDK/packages/
 YenePaySDK/*.nupkg
 YenePaySDK/YenePaySDK/YenePaySDK.nuspec
-YenePaySDK/YenePaySDK/*/*/YenePaySDK.*
+YenePaySDK/YenePaySDK/bin/Debug/*
+YenePaySDK/YenePaySDK/obj/Debug/*
+YenePaySDK/YenePaySDK/obj/Release/*
