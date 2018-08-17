@@ -9,7 +9,7 @@ namespace YenePaySdk
 {
     public class CheckoutHelper
     {
-        private const string checkoutBaseUrlProd = "https://checkout.yenepay.com/Home/Process/";
+        private const string checkoutBaseUrlProd = "https://www.yenepay.com/checkout/Home/Process/";
         private const string checkoutBaseUrlSandbox = "https://test.yenepay.com/Home/Process/";
         private const string ipnVerifyUrlProd = "https://endpoints.yenepay.com/api/verify/ipn/";
         private const string ipnVerifyUrlSandbox = "https://testapi.yenepay.com/api/verify/ipn/";
