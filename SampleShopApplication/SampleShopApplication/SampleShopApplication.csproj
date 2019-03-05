@@ -28,6 +28,7 @@
     </UpgradeBackupLocation>
     <OldToolsVersion>12.0</OldToolsVersion>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -136,8 +137,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="YenePaySDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\YenePay.YenePaySDK.1.4.0\lib\YenePaySDK.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\YenePay.YenePaySDK.1.5.0\lib\YenePaySDK.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -196,7 +196,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
