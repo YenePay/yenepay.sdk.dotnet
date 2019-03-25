@@ -11,11 +11,11 @@ namespace SampleShopApplication.Controllers
     public class HomeController : Controller
     {
         private CheckoutOptions checkoutoptions;
-        private string pdtToken = "YOUR_PDT_KEY_HERE";
+        private string pdtToken = "JWAlFLHqcukijN";
 
         public HomeController()
         {
-            string sellerCode = "YOUR_YENEPAY_SELLER_CODE";
+            string sellerCode = "0102";
             string successUrlReturn = "http://localhost:5525/Home/PaymentSuccessReturnUrl"; //"YOUR_SUCCESS_URL";
             string ipnUrlReturn = "http://localhost:5525/Home/IPNDestination"; //"YOUR_IPN_URL";
             string cancelUrlReturn = "http://localhost:5525/Home/PaymentCancelReturnUrl"; //"YOUR_CANCEL_URL";
@@ -70,11 +70,11 @@ namespace SampleShopApplication.Controllers
         public ActionResult CheckoutCart(List<CheckoutItem> Items)
         {
             checkoutoptions.Process = CheckoutType.Cart;
-            decimal? totalItemsDeliveryFee = 50;
-            decimal? totalItemsDiscount = 30;
-            decimal? totalItemsHandlingFee = 10;
+            decimal? totalItemsDeliveryFee = 10;
+            decimal? totalItemsDiscount = 5;
+            decimal? totalItemsHandlingFee = 6;
             decimal? totalItemsTax1 = Items.Sum(i => (i.UnitPrice * i.Quantity)) * (decimal)0.15;
-            decimal? totalItemsTax2 = Items.Sum(i => (i.UnitPrice * i.Quantity)) * (decimal)0.02;
+            decimal? totalItemsTax2 = 0;
             checkoutoptions.SetOrderFees(totalItemsDeliveryFee, totalItemsDiscount, totalItemsHandlingFee, totalItemsTax1, totalItemsTax2);
 
             checkoutoptions.OrderId = "AB-CD"; //"YOUR_UNIQUE_ID_FOR_THIS_ORDER";  //can also be set null
@@ -106,6 +106,7 @@ namespace SampleShopApplication.Controllers
         public async Task<ActionResult> PaymentSuccessReturnUrl(IPNModel ipnModel)
         {
             PDTRequestModel model = new PDTRequestModel(pdtToken, ipnModel.TransactionId, ipnModel.MerchantOrderId);
+            model.UseSandbox = checkoutoptions.UseSandbox;
             var pdtResponse = await CheckoutHelper.RequestPDT(model);
             if (pdtResponse.Count() > 0)
             {
