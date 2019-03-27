@@ -10,3 +10,7 @@ YenePaySDK/YenePaySDK/YenePaySDK.nuspec
 YenePaySDK/YenePaySDK/bin/Debug/*
 YenePaySDK/YenePaySDK/obj/Debug/*
 YenePaySDK/YenePaySDK/obj/Release/*
+*.nupkg
+YenePaySDK/YenePaySDK/obj/
+YenePaySDK/YenePaySDK/bin/
+/SampleShopApplication/ClassLibrary1

@@ -87,7 +87,7 @@ namespace YenePaySdk
                 {
                     pdtString = pdtString.Trim();
                     //the PDT string with this format: "result=SUCCESS&TotalAmount=total_amount&BuyerId=buyer_yenepay_account_id&BuyerName=buyer_name&TransactionFee=service_charge_fee_amount&MerchantOrderId=order_id_set_by_merchant&MerchantId=merchant_yenepay_account_id&MerchantCode=merchant_yenepay_seller_code&TransactionId=transaction_order_id&Status=current_status_of_the_order&StatusDescription=current_status_description&Currency=currency_used_for_transaction"
-                    var arr = pdtString.Split('&');
+                    var arr = pdtString.Trim('"').Split('&');
                     foreach (var item in arr)
                     {
                         var keyValue = item.Split('=');
