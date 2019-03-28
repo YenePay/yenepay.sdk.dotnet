@@ -17,10 +17,10 @@ To add YenePay to your application and start collecting payments, you will first
 Step 1: Download the YenePaySDK.dll library under the folder YenePaySDK/YenePaySDK/bin/Release/, add it to your project files as a file and add a reference to this dll to your project.
 To do this, open your project in Visual Studio, right click on References node under your project name, select Add References and locate the YenePaySDK.dll file.
 
-You can also install the sdk from nuget.org with the following Package Manage command
+The recommended way to install the latest version of the sdk is from nuget.org with the following Package Manager command
 
 ```
-Install-Package YenePay.YenePaySDK -Version 1.4.0
+Install-Package YenePay.YenePaySDK
 ```
 
 Step 2: Add a using reference to your class
