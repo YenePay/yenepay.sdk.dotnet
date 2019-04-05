@@ -137,7 +137,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="YenePaySDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\YenePay.YenePaySDK.1.5.1\lib\net45\YenePaySDK.dll</HintPath>
+      <HintPath>..\packages\YenePay.YenePaySDK.1.5.2\lib\YenePaySDK.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
