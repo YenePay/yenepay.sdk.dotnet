@@ -65,11 +65,11 @@ namespace YenePaySdk
             keyValues.Add("TotalAmount", this.TotalAmount.ToString());
             keyValues.Add("BuyerId", this.BuyerId.ToString());
             keyValues.Add("MerchantOrderId", this.MerchantOrderId.ToString());
-            keyValues.Add("MerchantId", this.MerchantId.ToString());
             keyValues.Add("MerchantCode", this.MerchantCode);
+            keyValues.Add("MerchantId", this.MerchantId.ToString());
+            keyValues.Add("TransactionCode", this.TransactionCode);
             keyValues.Add("TransactionId", this.TransactionId.ToString());
             keyValues.Add("Status", this.Status);
-            keyValues.Add("TransactionCode", this.TransactionCode);
             keyValues.Add("Currency", this.Currency);
             keyValues.Add("Signature", this.Signature);
             return keyValues;
