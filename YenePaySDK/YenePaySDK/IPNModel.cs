@@ -9,9 +9,9 @@ namespace YenePaySdk
     public class IPNModel
     {
         /// <summary>
-        /// Gets or sets the total ammount.
+        /// Gets or sets the total amount.
         /// </summary>
-        /// <value>The total ammount.</value>
+        /// <value>The total amount.</value>
         public decimal TotalAmount { get; set; }
         /// <summary>
         /// Gets or sets the buyer identifier.

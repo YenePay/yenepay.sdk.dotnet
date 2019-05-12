@@ -111,7 +111,7 @@ namespace YenePaySdk
             dict.Add("FailureUrl", FailureReturn);
             dict.Add("Process", Process.ToString());
             if (ExpiresAfter.HasValue)
-                dict.Add("ExpiresInDays", ExpiresAfter.Value.ToString());
+                dict.Add("ExpiresAfter", ExpiresAfter.Value.ToString());
             if (forCart)
             {
                 dict.Add("TotalItemsDeliveryFee", TotalItemsDeliveryFee._ToString());

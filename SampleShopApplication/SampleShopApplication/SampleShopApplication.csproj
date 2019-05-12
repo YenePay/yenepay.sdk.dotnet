@@ -137,7 +137,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="YenePaySDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\YenePay.YenePaySDK.1.5.0\lib\YenePaySDK.dll</HintPath>
+      <HintPath>..\packages\YenePay.YenePaySDK.1.5.2\lib\YenePaySDK.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +170,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="libman.json" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\Application.js" />
     <Content Include="Scripts\bootstrap.js" />
